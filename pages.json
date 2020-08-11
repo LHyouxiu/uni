@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/tabBar/news/index",
+			"style": {
+				"navigationBarTitleText": "资讯"
+			}
+		},
+		{
+			"path": "pages/tabBar/shop/index",
+			"style": {
+				"navigationBarTitleText":"购物车"
+			}
+		},
+		{
+			"path": "pages/tabBar/mine/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/home/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/news/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "资讯"
+			},
+			{
+				"pagePath": "pages/tabBar/shop/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/tabBar/mine/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "个人中心"
+			}
+		]
+	},
+	"subPackages": [{
+		"root": "pages/subnvue",
+		"pages": [{
+			"path": "subnvue",
+			"style": {
+				"navigationBarTitleText": "原生子窗体",
+				"app-plus": {
+					"subNVues": [{
+						"id": "drawer",
+						"path": "subnvue/drawer",
+						"type": "popup",
+						"style": {
+							"width": "50%"
+						}
+					}]
+				}
+			}
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#DC143C",
+		"backgroundColor": "#DC143C"
+	}
+}
